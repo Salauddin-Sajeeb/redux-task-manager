@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { Button } from '../ui/button'
 //import { useAppDispatch } from '@/redux/hooks'
 //import { Removetodo, } from '@/redux/Features/Todoslice'
@@ -15,7 +15,7 @@ export const TodoCard = ({title,description,_id,isCompleted,priority}:TTodoprops
     //  dispatch(ToggleComplete(id))
 
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const [updateTodos,{isLoading}]=useUpdateTodosMutation();
+    const [updateTodos]=useUpdateTodosMutation();
 
 
     const toggleState=()=>

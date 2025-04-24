@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
+import  { useState } from 'react'
 import { TodoCard } from './TodoCard'
 
 import TodoFilter from './TodoFilter'
 import AddtodoModal from './AddtodoModal'
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import { useAppSelector } from '@/redux/hooks'
+//import { useAppSelector } from '@/redux/hooks'
 import { useGetTodosQuery } from '@/redux/api/Api'
 import { JSX } from 'react/jsx-runtime'
 

@@ -6,6 +6,7 @@ import AddtodoModal from './AddtodoModal'
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { useAppSelector } from '@/redux/hooks'
 import { useGetTodosQuery } from '@/redux/api/Api'
+import { JSX } from 'react/jsx-runtime'
 
 export const Todocontainer = () => {
 
@@ -13,7 +14,7 @@ export const Todocontainer = () => {
 
  //const{todos}=useAppSelector((state)=>state.todos)
 
- const {data:todos,isLoading,isError}=useGetTodosQuery(priority)
+ const {data:todos,isLoading}=useGetTodosQuery(priority)
 if(isLoading)
 {
   <p>loading.....</p>
@@ -34,7 +35,7 @@ if(isLoading)
         <div className='bg-gradient-to-r from-violet-500 to-fuchsia-500 w-full h-full rounded-xl p-[5px] '>
         <div className='bg-white w-full h-full rounded-lg  space-y-1'>
        {
-        todos?.data?.map((item)=>
+        todos?.data?.map((item: JSX.IntrinsicAttributes & { _id: string; title: string; description: string; isCompleted?: boolean; priority: string })=>
           <TodoCard {...item} />
         )
        }

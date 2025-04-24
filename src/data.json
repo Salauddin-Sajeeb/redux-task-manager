@@ -1,0 +1,45 @@
+[
+    {
+      "id": 1,
+      "title": "Fix login bug",
+      "description": "Users can't log in with valid credentials.",
+      "priority": "high",
+      "status": "open"
+    },
+    {
+      "id": 2,
+      "title": "Add dark mode",
+      "description": "Implement a dark mode toggle throughout the app.",
+      "priority": "medium",
+      "status": "in progress"
+    },
+    {
+      "id": 3,
+      "title": "Update landing page",
+      "description": "Redesign the hero section and update marketing copy.",
+      "priority": "low",
+      "status": "closed"
+    },
+    {
+      "id": 4,
+      "title": "Create contact form",
+      "description": "Add a form to the contact page with validation.",
+      "priority": "medium",
+      "status": "open"
+    },
+    {
+      "id": 5,
+      "title": "Optimize images",
+      "description": "Compress and lazy-load images for faster loading.",
+      "priority": "high",
+      "status": "in progress"
+    },
+    {
+      "id": 6,
+      "title": "Set up CI/CD pipeline",
+      "description": "Integrate GitHub Actions to automate testing and deployment.",
+      "priority": "high",
+      "status": "open"
+    }
+  ]
+  
